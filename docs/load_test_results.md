@@ -38,15 +38,6 @@ sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, conn
 
 То есть API уперся в пул соединений SQLAlchemy/PostgreSQL. В `docs/locust_500u_failures.csv` зафиксированы HTTP 500 на всех основных эндпоинтах.
 
-## Артефакты
-
-- `docs/locust_smoke_stats.csv`
-- `docs/locust_500u_stats.csv`
-- `docs/locust_500u_failures.csv`
-- `docs/api_after_load.log`
-- `docs/postgres_after_load.log`
-- `docs/worker_after_load.log`
-
 ## Вывод
 
 Текущая конфигурация подходит для профиля около 50 пользователей, но не выдерживает 500 пользователей. Для роста нагрузки нужно настраивать пул соединений, количество API workers, лимиты PostgreSQL.
