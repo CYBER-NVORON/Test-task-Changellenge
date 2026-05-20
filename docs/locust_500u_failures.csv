@@ -1,0 +1,6 @@
+Method,Name,Error,Occurrences
+POST,/users,HTTPError('500 Server Error: Internal Server Error for url: /users'),73
+GET,/devices/{device_identifier}/analysis,HTTPError('500 Server Error: Internal Server Error for url: /devices/{device_identifier}/analysis'),9
+GET,/users/{user_id}/analysis,HTTPError('500 Server Error: Internal Server Error for url: /users/{user_id}/analysis'),4
+POST,/users/{user_id}/devices,HTTPError('500 Server Error: Internal Server Error for url: /users/{user_id}/devices'),3
+POST,/devices/{device_identifier}/readings,HTTPError('500 Server Error: Internal Server Error for url: /devices/{device_identifier}/readings'),16
